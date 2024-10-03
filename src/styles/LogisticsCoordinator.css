@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    margin-top: 130px;
+    background-color: #007bff;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  .section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group select,
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Inventory and Delivery List */
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-description,
+  .item-quantity,
+  .delivery-item,
+  .delivery-status {
+    font-weight: bold;
+  }
+  
+  .track-button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .track-button:hover {
+    background-color: #218838;
+  }
+  

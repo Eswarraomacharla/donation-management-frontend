@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Donor Dashboard Specific Styles */
+  .donor-dashboard .dashboard-container {
+    display: flex;
+    height: 100vh; /* Makes the sidebar and main content take full viewport height */
+  }
+  
+  .donor-dashboard .sidebar {
+    width: 250px;
+    background-color: #007bff;
+    padding: 20px;
+    color: #fff;
+    margin-top: 130px;
+    height: 70%; /* Sidebar takes the full height of the container */
+    position: fixed; /* Fixes sidebar in position */
+    top: 0;
+    left: 0;
+  }
+  
+  .donor-dashboard .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .donor-dashboard .sidebar ul li {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #0056b3;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .donor-dashboard .sidebar ul li.active,
+  .donor-dashboard .sidebar ul li:hover {
+    background-color: #004085;
+  }
+  
+  .donor-dashboard .sidebar ul li.active {
+    font-weight: bold;
+  }
+  
+  .donor-dashboard .sidebar ul li:hover {
+    background-color: #003366;
+  }
+  
+  /* Main Content Styles */
+  .donor-dashboard .main-content {
+    margin-left: 270px; /* Creates space for the sidebar to the left */
+    padding: 20px;
+    background-color: #fff;
+    width: calc(100% - 270px); /* Main content takes the remaining width */
+    min-height: 100vh; /* Ensures full height */
+    overflow-y: auto; /* Allows scrolling if content is larger than the screen */
+  }
+  
+  .donor-dashboard .section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donor-dashboard h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Button Styles */
+  .donor-dashboard .button, 
+  .donor-dashboard .track-button, 
+  .donor-dashboard .participate-button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .donor-dashboard .button {
+    background-color: #007bff;
+  }
+  
+  .donor-dashboard .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .donor-dashboard .track-button, 
+  .donor-dashboard .participate-button {
+    background-color: #28a745;
+  }
+  
+  .donor-dashboard .track-button:hover, 
+  .donor-dashboard .participate-button:hover {
+    background-color: #218838;
+  }
+  
+  /* List Styles */
+  .donor-dashboard ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .donor-dashboard li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .donor-dashboard .item-description {
+    font-weight: bold;
+  }
+  
+  .donor-dashboard .status {
+    color: #777;
+  }
+  
